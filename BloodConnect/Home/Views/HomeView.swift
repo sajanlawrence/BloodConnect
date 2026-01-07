@@ -25,7 +25,6 @@ struct HomeView: View {
                     .frame(width: 32, height: 32)
                     
             }
-            .padding(.top, 30)
             .padding(.horizontal)
             
             ScrollView(.horizontal) {

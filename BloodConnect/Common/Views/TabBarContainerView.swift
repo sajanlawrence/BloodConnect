@@ -28,7 +28,6 @@ struct TabBarContainerView: View {
                 if showTabBar{
                     BottomTabBar(showSheet: $showDonationSheet)
                         .padding(.horizontal)
-                        .padding(.vertical, 0)
                         .frame(height: 52)
                 }
             }
