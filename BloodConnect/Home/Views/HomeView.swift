@@ -1,0 +1,62 @@
+//
+//  HomeView.swift
+//  BloodConnect
+//
+//  Created by Sajan Lawrence on 03/01/26.
+//
+
+import SwiftUI
+
+struct HomeView: View {
+    let images: [ImageResource] = [.sliderImage1, .sliderImage2]
+    var body: some View {
+        VStack(alignment: .center){
+            HStack(alignment: .center){
+                VStack(alignment: .leading){
+                    Text("WELCOME")
+                        .font(.custom("Ubuntu-Regular", size: 14))
+                    Text("SAJAN LAWRENCE")
+                        .font(.custom("Ubuntu-Bold", size: 18))
+                }
+                Spacer()
+                Image(.notificationIcon)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 32, height: 32)
+                    
+            }
+            .padding(.top, 30)
+            .padding(.horizontal)
+            
+            ScrollView(.horizontal) {
+                HStack{
+                    ForEach(images, id: \.self) { image in
+                        CardView(imageName: image)
+                    }
+                }
+            }
+            .scrollIndicators(.hidden)
+            .padding()
+            
+            ZStack{
+                Rectangle()
+                    .foregroundStyle(.gray.opacity(0.1))
+                    .ignoresSafeArea()
+                VStack{
+                    HStack{
+                        ActionCardView(imageName: .campaign, title: "CAMPAIGNS")
+                        ActionCardView(imageName: .bloodBag, title: "DONATE")
+                        ActionCardView(imageName: .findDonor, title: "FIND DONOR")
+                    }
+                    .padding()
+                    DonationRequestView()
+                    InviteFriendView()
+                }
+            }
+        }
+    }
+}
+
+#Preview {
+    HomeView()
+}
