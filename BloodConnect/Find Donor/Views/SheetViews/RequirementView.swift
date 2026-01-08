@@ -25,7 +25,7 @@ struct RequirementView: View {
             DropdownTextField(selectedOption: $selectedOption)
                 .padding(.bottom)
             TermsCheckboxView()
-                .padding(.bottom)
+                .padding(.bottom, 30)
 
             HStack{
                 Button {

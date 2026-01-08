@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     let images: [ImageResource] = [.sliderImage1, .sliderImage2]
+    @Binding var showDonationSheet: Bool
     var body: some View {
         VStack(alignment: .center){
             HStack(alignment: .center){
@@ -43,9 +44,25 @@ struct HomeView: View {
                     .ignoresSafeArea()
                 VStack{
                     HStack{
-                        ActionCardView(imageName: .campaign, title: "CAMPAIGNS")
-                        ActionCardView(imageName: .bloodBag, title: "DONATE")
-                        ActionCardView(imageName: .findDonor, title: "FIND DONOR")
+                        Button {
+                            
+                        } label: {
+                            ActionCardView(imageName: .campaign, title: "CAMPAIGNS")
+                        }
+
+                        Button {
+                            
+                        } label: {
+                            ActionCardView(imageName: .bloodBag, title: "DONATE")
+                        }
+
+                        Button {
+                            showDonationSheet = true
+                        } label: {
+                            ActionCardView(imageName: .findDonor, title: "FIND DONOR")
+                        }
+
+                        
                     }
                     .padding()
                     DonationRequestView()
@@ -57,5 +74,5 @@ struct HomeView: View {
 }
 
 #Preview {
-    HomeView()
+    HomeView(showDonationSheet: .constant(false))
 }

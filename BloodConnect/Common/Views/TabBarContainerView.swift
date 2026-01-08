@@ -17,7 +17,7 @@ struct TabBarContainerView: View {
             ZStack{
                 switch tabRouter.selectedTab{
                 case .home:
-                    HomeView()
+                    HomeView(showDonationSheet: $showDonationSheet)
                 case .donate:
                     SearchResultsView()
                 case .profile:

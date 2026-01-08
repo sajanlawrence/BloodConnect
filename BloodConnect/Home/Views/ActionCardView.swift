@@ -24,6 +24,7 @@ struct ActionCardView: View {
                     .padding(.bottom, 5)
                 Text(title)
                     .font(.custom("Ubuntu-Bold", size: 13))
+                    .foregroundStyle(.black)
             }
         }
         .padding(.horizontal, 5)
