@@ -21,10 +21,12 @@ struct HomeView: View {
                             .font(.custom("Ubuntu-Bold", size: 18))
                     }
                     Spacer()
-                    Image(.notificationIcon)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 32, height: 32)
+                    NavigationLink(destination: NotificationsView().navigationBarBackButtonHidden()) {
+                        Image(.notificationIcon)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 32, height: 32)
+                    }
                     
                 }
                 .padding(.horizontal)

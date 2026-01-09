@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SearchResultsView: View {
+    @Environment(SearchResultsViewModel.self) var searchVM
     var body: some View {
         NavigationStack {
             ZStack {
@@ -20,7 +21,7 @@ struct SearchResultsView: View {
                         .padding(.top)
                         .padding(.leading)
                     HStack{
-                        Text("\(20) RESULT(S) FOUND FOR BLOOD TYPE")
+                        Text("\(searchVM.matchingDonors().count) RESULT(S) FOUND FOR BLOOD TYPE")
                             .font(.custom("Ubuntu-Regular", size: 14))
                             .foregroundStyle(Color(red: 153/255.0, green: 153/255.0, blue: 153/255.0))
                         Text("B+")
@@ -31,12 +32,12 @@ struct SearchResultsView: View {
                     .frame(height: 28)
                     .padding(.leading)
                     ScrollView{
-                        ForEach(0..<10) { i in
+                        ForEach(searchVM.matchingDonors()) { donor in
                             NavigationLink {
-                                DonorProfileView(donor: Donor(id: "D001", name: "MABEL PETERSON", bloodType: "B+", age: 22, phoneNumber: "1234567898", address: "3891 Ranchview Dr. Richardson, California 62639", donatedCount: 20, donationRequestedCount: 2, isAvailableForDonation: true))
+                                DonorProfileView(donor: donor)
                                     .navigationBarBackButtonHidden()
                             } label: {
-                                ListRow(donor: Donor(id: "D001", name: "MABEL PETERSON", bloodType: "B+", age: 22, phoneNumber: "1234567898", address: "3891 Ranchview Dr. Richardson, California 62639", donatedCount: 20, donationRequestedCount: 2, isAvailableForDonation: true))
+                                ListRow(donor: donor)
                             }
                             
                             
@@ -53,4 +54,5 @@ struct SearchResultsView: View {
 
 #Preview {
     SearchResultsView()
+        .environment(SearchResultsViewModel())
 }

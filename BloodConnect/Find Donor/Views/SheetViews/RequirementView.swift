@@ -10,11 +10,10 @@ import SwiftUI
 struct RequirementView: View {
     @State private var selectedDate: Date? = nil
     @State private var selectedOption: String? = nil
-    @Binding var date: String
-    @Binding var purpose: String
     @Environment(\.dismiss) var dismiss
     @Environment(SheetRouter.self) private var sheetRouter
     @Environment(TabRouter.self) private var tabRouter
+    @Environment(SearchResultsViewModel.self) private var searchVM
     var body: some View {
         VStack(alignment: .leading) {
             Text("REQUIREMENT")
@@ -38,8 +37,8 @@ struct RequirementView: View {
                 }
                 Spacer()
                 Button {
-                    date = selectedDateText
-                    purpose = selectedOptionText
+                    searchVM.date = selectedDateText
+                    searchVM.purpose = selectedOptionText
                     tabRouter.selectedTab = .donate
                     dismiss()
                 } label: {
@@ -75,7 +74,7 @@ struct RequirementView: View {
 }
 
 #Preview {
-    RequirementView(date: .constant(""), purpose: .constant(""))
+    RequirementView()
         .environment(SheetRouter())
         .environment(TabRouter())
 }

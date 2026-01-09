@@ -10,6 +10,7 @@ import SwiftUI
 struct DonorProfileView: View {
     let donor: Donor
     @Environment(\.dismiss) private var dismiss
+    @State private var showCallAlert = false
     var body: some View {
         ZStack {
             Color(red: 246/255.0, green: 246/255.0, blue: 246/255.0)
@@ -69,8 +70,11 @@ struct DonorProfileView: View {
                     Text(donor.address)
                         .multilineTextAlignment(.center)
                 }
-                .frame(width: 297, height: 100)
-                VStack(spacing: 30){
+                .frame(height: 130)
+                .frame(maxWidth: .infinity)
+                .padding(.horizontal)
+                
+                VStack(spacing: 20){
                     Button {
                         
                     } label: {
@@ -81,7 +85,7 @@ struct DonorProfileView: View {
                     }
                     
                     Button {
-                        
+                        showCallAlert = true
                     } label: {
                         Image(.callNow)
                             .resizable()
@@ -92,6 +96,12 @@ struct DonorProfileView: View {
                 .padding()
                 Spacer()
             }
+        }
+        .alert("Call Donor?", isPresented: $showCallAlert) {
+            Button("Call", role: .destructive) {
+                callNumber(donor.phoneNumber)
+            }
+            Button("Cancel", role: .cancel) { }
         }
     }
 }
@@ -104,6 +114,14 @@ extension DonorProfileView{
                 .foregroundStyle(.appPrimary)
             Text(subHeading)
                 .font(.custom("Ubuntu-Regular", size: 14))
+        }
+    }
+    
+    func callNumber(_ phoneNumber: String) {
+        let cleanedNumber = phoneNumber.replacingOccurrences(of: " ", with: "")
+        if let url = URL(string: "tel://\(cleanedNumber)"),
+           UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url)
         }
     }
 }

@@ -6,7 +6,7 @@
       "bloodType": "A+",
       "age": 27,
       "phoneNumber": "9876543210",
-      "address": "Kochi, Kerala",
+      "address": "12 Rose Villa, Marine Drive Road, Kochi, Ernakulam District, Kerala 682031",
       "donatedCount": 5,
       "donationRequestedCount": 2,
       "isAvailableForDonation": true
@@ -17,7 +17,7 @@
       "bloodType": "O+",
       "age": 32,
       "phoneNumber": "9876543211",
-      "address": "Trivandrum, Kerala",
+      "address": "45 Green Meadows, Kowdiar Avenue, Thiruvananthapuram, Kerala 695003",
       "donatedCount": 8,
       "donationRequestedCount": 4,
       "isAvailableForDonation": false
@@ -28,7 +28,7 @@
       "bloodType": "B+",
       "age": 29,
       "phoneNumber": "9876543212",
-      "address": "Bangalore, Karnataka",
+      "address": "389 Brigade Residency, Whitefield Main Road, Bangalore, Karnataka 560066",
       "donatedCount": 3,
       "donationRequestedCount": 1,
       "isAvailableForDonation": true
@@ -39,7 +39,7 @@
       "bloodType": "AB+",
       "age": 35,
       "phoneNumber": "9876543213",
-      "address": "Hyderabad, Telangana",
+      "address": "22 Lotus Heights, Jubilee Hills Road No. 36, Hyderabad, Telangana 500033",
       "donatedCount": 10,
       "donationRequestedCount": 5,
       "isAvailableForDonation": true
@@ -50,7 +50,7 @@
       "bloodType": "O-",
       "age": 26,
       "phoneNumber": "9876543214",
-      "address": "Thrissur, Kerala",
+      "address": "7 Krishna Nivas, Punkunnam Main Road, Thrissur, Kerala 680002",
       "donatedCount": 2,
       "donationRequestedCount": 0,
       "isAvailableForDonation": true
@@ -61,7 +61,7 @@
       "bloodType": "A-",
       "age": 31,
       "phoneNumber": "9876543215",
-      "address": "Chennai, Tamil Nadu",
+      "address": "104 Blue Orchid Apartments, Anna Nagar West Extension, Chennai, Tamil Nadu 600101",
       "donatedCount": 6,
       "donationRequestedCount": 3,
       "isAvailableForDonation": false
@@ -72,7 +72,7 @@
       "bloodType": "B-",
       "age": 28,
       "phoneNumber": "9876543216",
-      "address": "Kottayam, Kerala",
+      "address": "15 St. George Enclave, MC Road, Kottayam, Kerala 686001",
       "donatedCount": 4,
       "donationRequestedCount": 2,
       "isAvailableForDonation": true
@@ -83,7 +83,7 @@
       "bloodType": "AB-",
       "age": 34,
       "phoneNumber": "9876543217",
-      "address": "Alappuzha, Kerala",
+      "address": "89 Lake View Residency, Finishing Point Road, Alappuzha, Kerala 688013",
       "donatedCount": 7,
       "donationRequestedCount": 3,
       "isAvailableForDonation": false
@@ -94,7 +94,7 @@
       "bloodType": "O+",
       "age": 30,
       "phoneNumber": "9876543218",
-      "address": "Mumbai, Maharashtra",
+      "address": "301 Sea Breeze Towers, Carter Road, Bandra West, Mumbai, Maharashtra 400050",
       "donatedCount": 9,
       "donationRequestedCount": 4,
       "isAvailableForDonation": true
@@ -105,7 +105,7 @@
       "bloodType": "A+",
       "age": 25,
       "phoneNumber": "9876543219",
-      "address": "Coimbatore, Tamil Nadu",
+      "address": "56 Green Park Layout, Avinashi Road, Coimbatore, Tamil Nadu 641014",
       "donatedCount": 1,
       "donationRequestedCount": 1,
       "isAvailableForDonation": true
@@ -117,7 +117,7 @@
       "bloodType": "B+",
       "age": 36,
       "phoneNumber": "9876543220",
-      "address": "Mysore, Karnataka",
+      "address": "11 Heritage Homes, Hunsur Road, Mysore, Karnataka 570012",
       "donatedCount": 11,
       "donationRequestedCount": 6,
       "isAvailableForDonation": false
@@ -128,7 +128,7 @@
       "bloodType": "O-",
       "age": 40,
       "phoneNumber": "9876543221",
-      "address": "Palakkad, Kerala",
+      "address": "9 Palm Grove Villa, Olavakkode Road, Palakkad, Kerala 678002",
       "donatedCount": 12,
       "donationRequestedCount": 7,
       "isAvailableForDonation": true
@@ -139,7 +139,7 @@
       "bloodType": "A-",
       "age": 24,
       "phoneNumber": "9876543222",
-      "address": "Calicut, Kerala",
+      "address": "27 Silver Sands Apartments, Beach Road, Kozhikode, Kerala 673001",
       "donatedCount": 0,
       "donationRequestedCount": 1,
       "isAvailableForDonation": true
@@ -150,7 +150,7 @@
       "bloodType": "AB+",
       "age": 33,
       "phoneNumber": "9876543223",
-      "address": "Delhi",
+      "address": "Flat 402, Noor Residency, Zakir Nagar, Okhla, New Delhi 110025",
       "donatedCount": 6,
       "donationRequestedCount": 2,
       "isAvailableForDonation": false
@@ -161,18 +161,19 @@
       "bloodType": "B-",
       "age": 29,
       "phoneNumber": "9876543224",
-      "address": "Lucknow, Uttar Pradesh",
+      "address": "18 Royal Enclave, Gomti Nagar Extension, Lucknow, Uttar Pradesh 226010",
       "donatedCount": 5,
       "donationRequestedCount": 2,
       "isAvailableForDonation": true
     },
+
     {
       "id": "D016",
       "name": "Vikas Gupta",
       "bloodType": "O+",
       "age": 37,
       "phoneNumber": "9876543225",
-      "address": "Jaipur, Rajasthan",
+      "address": "221 Pink City Residency, Malviya Nagar, Jaipur, Rajasthan 302017",
       "donatedCount": 10,
       "donationRequestedCount": 5,
       "isAvailableForDonation": false
@@ -183,7 +184,7 @@
       "bloodType": "A+",
       "age": 34,
       "phoneNumber": "9876543226",
-      "address": "Salem, Tamil Nadu",
+      "address": "63 Sri Lakshmi Nagar, Four Roads Junction, Salem, Tamil Nadu 636007",
       "donatedCount": 7,
       "donationRequestedCount": 3,
       "isAvailableForDonation": true
@@ -194,7 +195,7 @@
       "bloodType": "AB-",
       "age": 28,
       "phoneNumber": "9876543227",
-      "address": "Pathanamthitta, Kerala",
+      "address": "44 Hillside Residency, MC Road, Pathanamthitta, Kerala 689645",
       "donatedCount": 3,
       "donationRequestedCount": 1,
       "isAvailableForDonation": true
@@ -205,7 +206,7 @@
       "bloodType": "B+",
       "age": 31,
       "phoneNumber": "9876543228",
-      "address": "Indore, Madhya Pradesh",
+      "address": "90 Sunrise Apartments, Vijay Nagar Square, Indore, Madhya Pradesh 452010",
       "donatedCount": 4,
       "donationRequestedCount": 2,
       "isAvailableForDonation": false
@@ -216,7 +217,7 @@
       "bloodType": "O-",
       "age": 35,
       "phoneNumber": "9876543229",
-      "address": "Kollam, Kerala",
+      "address": "5 River View Homes, Asramam Road, Kollam, Kerala 691002",
       "donatedCount": 8,
       "donationRequestedCount": 4,
       "isAvailableForDonation": true
@@ -228,7 +229,7 @@
       "bloodType": "A-",
       "age": 26,
       "phoneNumber": "9876543230",
-      "address": "Erode, Tamil Nadu",
+      "address": "102 Green Valley Layout, Perundurai Road, Erode, Tamil Nadu 638011",
       "donatedCount": 2,
       "donationRequestedCount": 0,
       "isAvailableForDonation": true
@@ -239,7 +240,7 @@
       "bloodType": "B-",
       "age": 38,
       "phoneNumber": "9876543231",
-      "address": "Malappuram, Kerala",
+      "address": "78 Crescent Residency, Kottakkal Road, Malappuram, Kerala 676505",
       "donatedCount": 9,
       "donationRequestedCount": 5,
       "isAvailableForDonation": false
@@ -250,7 +251,7 @@
       "bloodType": "AB+",
       "age": 41,
       "phoneNumber": "9876543232",
-      "address": "Chandigarh",
+      "address": "16 Park Avenue, Sector 10, Chandigarh 160011",
       "donatedCount": 14,
       "donationRequestedCount": 6,
       "isAvailableForDonation": true
@@ -261,7 +262,7 @@
       "bloodType": "O+",
       "age": 39,
       "phoneNumber": "9876543233",
-      "address": "Pune, Maharashtra",
+      "address": "401 Orchid Towers, Baner Road, Pune, Maharashtra 411045",
       "donatedCount": 12,
       "donationRequestedCount": 5,
       "isAvailableForDonation": false
@@ -272,19 +273,18 @@
       "bloodType": "A+",
       "age": 23,
       "phoneNumber": "9876543234",
-      "address": "Silchar, Assam",
+      "address": "33 Hill View Residency, Tarapur Road, Silchar, Assam 788001",
       "donatedCount": 1,
       "donationRequestedCount": 1,
       "isAvailableForDonation": true
     },
-
     {
       "id": "D026",
       "name": "Anoop Kumar",
       "bloodType": "B+",
       "age": 34,
       "phoneNumber": "9876543235",
-      "address": "Kannur, Kerala",
+      "address": "House No. 18, Green Valley Layout, Near Kannur Railway Station, Kannur Town, Kannur District, Kerala 670001",
       "donatedCount": 6,
       "donationRequestedCount": 2,
       "isAvailableForDonation": true
@@ -295,7 +295,7 @@
       "bloodType": "O-",
       "age": 45,
       "phoneNumber": "9876543236",
-      "address": "Idukki, Kerala",
+      "address": "St. Mary's Villa, Cheruthoni Road, Near Idukki Dam View Point, Idukki Township, Idukki District, Kerala 685602",
       "donatedCount": 15,
       "donationRequestedCount": 8,
       "isAvailableForDonation": false
@@ -306,7 +306,7 @@
       "bloodType": "AB-",
       "age": 29,
       "phoneNumber": "9876543237",
-      "address": "Noida, Uttar Pradesh",
+      "address": "Flat No. 1204, Sunrise Apartments, Sector 75, Near Noida City Centre Metro Station, Noida, Uttar Pradesh 201301",
       "donatedCount": 4,
       "donationRequestedCount": 1,
       "isAvailableForDonation": true
@@ -317,7 +317,7 @@
       "bloodType": "A-",
       "age": 33,
       "phoneNumber": "9876543238",
-      "address": "Kolkata, West Bengal",
+      "address": "22B Lake View Residency, Salt Lake Sector V, Near Techno India College, Bidhannagar, Kolkata, West Bengal 700091",
       "donatedCount": 7,
       "donationRequestedCount": 3,
       "isAvailableForDonation": true
@@ -328,19 +328,18 @@
       "bloodType": "B-",
       "age": 27,
       "phoneNumber": "9876543239",
-      "address": "Udaipur, Rajasthan",
+      "address": "Plot No. 9, Shastri Nagar Extension, Near City Palace Road, Udaipur City, Udaipur District, Rajasthan 313001",
       "donatedCount": 3,
       "donationRequestedCount": 1,
       "isAvailableForDonation": false
     },
-
     {
       "id": "D031",
       "name": "Ashwin Rao",
       "bloodType": "O+",
       "age": 36,
       "phoneNumber": "9876543240",
-      "address": "Mangalore, Karnataka",
+      "address": "Sai Kripa House, Hampankatta Main Road, Near Central Market, Mangalore City, Dakshina Kannada, Karnataka 575001",
       "donatedCount": 9,
       "donationRequestedCount": 4,
       "isAvailableForDonation": true
@@ -351,7 +350,7 @@
       "bloodType": "A+",
       "age": 31,
       "phoneNumber": "9876543241",
-      "address": "Ernakulam, Kerala",
+      "address": "Flat 3B, River View Apartments, Marine Drive Road, Near High Court Junction, Ernakulam, Kochi, Kerala 682031",
       "donatedCount": 5,
       "donationRequestedCount": 2,
       "isAvailableForDonation": true
@@ -362,7 +361,7 @@
       "bloodType": "AB+",
       "age": 42,
       "phoneNumber": "9876543242",
-      "address": "Patna, Bihar",
+      "address": "House No. 45, Boring Canal Road, Near Patna Women’s College, Sri Krishnapuri, Patna, Bihar 800001",
       "donatedCount": 13,
       "donationRequestedCount": 6,
       "isAvailableForDonation": false
@@ -373,7 +372,7 @@
       "bloodType": "O-",
       "age": 28,
       "phoneNumber": "9876543243",
-      "address": "Madurai, Tamil Nadu",
+      "address": "12 Meenakshi Nagar, KK Nagar West, Near Madurai Medical College, Madurai City, Tamil Nadu 625020",
       "donatedCount": 4,
       "donationRequestedCount": 1,
       "isAvailableForDonation": true
@@ -384,19 +383,18 @@
       "bloodType": "B+",
       "age": 35,
       "phoneNumber": "9876543244",
-      "address": "Bhopal, Madhya Pradesh",
+      "address": "Flat No. 602, Royal Residency, MP Nagar Zone II, Near DB Mall, Bhopal, Madhya Pradesh 462011",
       "donatedCount": 8,
       "donationRequestedCount": 3,
       "isAvailableForDonation": false
     },
-
     {
       "id": "D036",
       "name": "Joseph Antony",
       "bloodType": "A-",
       "age": 39,
       "phoneNumber": "9876543245",
-      "address": "Angamaly, Kerala",
+      "address": "Antony Bhavan, Near St. Joseph Church, Angamaly North, Ernakulam District, Kerala 683572",
       "donatedCount": 10,
       "donationRequestedCount": 4,
       "isAvailableForDonation": true
@@ -407,7 +405,7 @@
       "bloodType": "AB-",
       "age": 34,
       "phoneNumber": "9876543246",
-      "address": "Gurgaon, Haryana",
+      "address": "Tower B, Flat 1403, DLF Phase 4, Golf Course Road, Near Horizon Centre, Gurgaon, Haryana 122002",
       "donatedCount": 6,
       "donationRequestedCount": 2,
       "isAvailableForDonation": true
@@ -418,7 +416,7 @@
       "bloodType": "O+",
       "age": 44,
       "phoneNumber": "9876543247",
-      "address": "Vizag, Andhra Pradesh",
+      "address": "Plot No. 78, MVP Colony Sector 5, Near RK Beach Road, Visakhapatnam City, Andhra Pradesh 530017",
       "donatedCount": 14,
       "donationRequestedCount": 7,
       "isAvailableForDonation": false
@@ -429,7 +427,7 @@
       "bloodType": "B-",
       "age": 26,
       "phoneNumber": "9876543248",
-      "address": "Agartala, Tripura",
+      "address": "Das Para, Near Ujjayanta Palace, Agartala Municipal Area, West Tripura District, Tripura 799001",
       "donatedCount": 2,
       "donationRequestedCount": 1,
       "isAvailableForDonation": true
@@ -440,19 +438,18 @@
       "bloodType": "A+",
       "age": 48,
       "phoneNumber": "9876543249",
-      "address": "Ahmedabad, Gujarat",
+      "address": "Bungalow No. 11, Navrangpura Society, Near CG Road Metro Station, Ahmedabad City, Gujarat 380009",
       "donatedCount": 16,
       "donationRequestedCount": 8,
       "isAvailableForDonation": false
     },
-
     {
       "id": "D041",
       "name": "Neeraj Kumar",
       "bloodType": "O-",
       "age": 33,
       "phoneNumber": "9876543250",
-      "address": "Ranchi, Jharkhand",
+      "address": "Flat 2A, Hill View Apartments, Morabadi Road, Near Birsa Munda Stadium, Ranchi, Jharkhand 834008",
       "donatedCount": 5,
       "donationRequestedCount": 2,
       "isAvailableForDonation": true
@@ -463,7 +460,7 @@
       "bloodType": "AB+",
       "age": 29,
       "phoneNumber": "9876543251",
-      "address": "Kasaragod, Kerala",
+      "address": "Paul Residency, Near Bekal Fort Road, Kasaragod Town, Kasaragod District, Kerala 671121",
       "donatedCount": 3,
       "donationRequestedCount": 1,
       "isAvailableForDonation": true
@@ -474,7 +471,7 @@
       "bloodType": "B+",
       "age": 37,
       "phoneNumber": "9876543252",
-      "address": "Varanasi, Uttar Pradesh",
+      "address": "House No. 90, Assi Ghat Road, Near Banaras Hindu University, Varanasi City, Uttar Pradesh 221005",
       "donatedCount": 9,
       "donationRequestedCount": 4,
       "isAvailableForDonation": false
@@ -485,7 +482,7 @@
       "bloodType": "A-",
       "age": 41,
       "phoneNumber": "9876543253",
-      "address": "Thodupuzha, Kerala",
+      "address": "Mathew Villa, Moolamattom Road, Near Private Bus Stand, Thodupuzha Town, Idukki District, Kerala 685584",
       "donatedCount": 11,
       "donationRequestedCount": 5,
       "isAvailableForDonation": true
@@ -496,7 +493,7 @@
       "bloodType": "O+",
       "age": 28,
       "phoneNumber": "9876543254",
-      "address": "Surat, Gujarat",
+      "address": "Flat No. 504, Diamond Plaza, Ring Road, Near Gopi Talav, Surat City, Gujarat 395002",
       "donatedCount": 4,
       "donationRequestedCount": 2,
       "isAvailableForDonation": true
@@ -507,7 +504,7 @@
       "bloodType": "B-",
       "age": 35,
       "phoneNumber": "9876543255",
-      "address": "Srinagar, J&K",
+      "address": "Hussain Manzil, Lal Chowk Main Road, Near Clock Tower, Srinagar City, Jammu & Kashmir 190001",
       "donatedCount": 7,
       "donationRequestedCount": 3,
       "isAvailableForDonation": false
@@ -518,7 +515,7 @@
       "bloodType": "AB-",
       "age": 31,
       "phoneNumber": "9876543256",
-      "address": "Vadodara, Gujarat",
+      "address": "Shah Residency, Alkapuri Extension, Near Race Course Circle, Vadodara City, Gujarat 390007",
       "donatedCount": 5,
       "donationRequestedCount": 2,
       "isAvailableForDonation": true
@@ -529,7 +526,7 @@
       "bloodType": "O-",
       "age": 46,
       "phoneNumber": "9876543257",
-      "address": "Tirunelveli, Tamil Nadu",
+      "address": "Plot No. 61, Palayamkottai High Road, Near Tirunelveli Junction Railway Station, Tirunelveli, Tamil Nadu 627002",
       "donatedCount": 18,
       "donationRequestedCount": 9,
       "isAvailableForDonation": false
@@ -540,7 +537,7 @@
       "bloodType": "A+",
       "age": 27,
       "phoneNumber": "9876543258",
-      "address": "Prayagraj, Uttar Pradesh",
+      "address": "Flat 101, Sangam Residency, Civil Lines Area, Near Allahabad High Court, Prayagraj, Uttar Pradesh 211001",
       "donatedCount": 3,
       "donationRequestedCount": 1,
       "isAvailableForDonation": true
@@ -551,11 +548,11 @@
       "bloodType": "B+",
       "age": 34,
       "phoneNumber": "9876543259",
-      "address": "Trichy, Tamil Nadu",
+      "address": "John Villa, Cantonment Area, Near Rockfort Temple Road, Tiruchirappalli City, Tamil Nadu 620001",
       "donatedCount": 6,
       "donationRequestedCount": 2,
       "isAvailableForDonation": true
     }
+
   ]
 }
-

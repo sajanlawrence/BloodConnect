@@ -9,9 +9,9 @@ import SwiftUI
 
 struct BloodGrpSelectionView: View {
     let bloodGroups: [String] = ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"]
-    @Binding var requiredBloodGrp: String
     @State private var selectedBtnIndex: Int? = nil
     @Environment(SheetRouter.self) private var sheetRouter
+    @Environment(SearchResultsViewModel.self) private var searchVM
     var body: some View {
         VStack(alignment: .leading) {
             Text("BLOOD TYPE")
@@ -58,7 +58,7 @@ struct BloodGrpSelectionView: View {
                 Spacer()
                 Button {
                     if let index = selectedBtnIndex{
-                        requiredBloodGrp = bloodGroups[index]
+                        searchVM.requiredBloodGrp = bloodGroups[index]
                     }
                     sheetRouter.selectedSheet = .addressSheet
                 } label: {
@@ -84,6 +84,7 @@ struct BloodGrpSelectionView: View {
 }
 
 #Preview {
-    BloodGrpSelectionView(requiredBloodGrp: .constant(""))
+    BloodGrpSelectionView()
         .environment(SheetRouter())
+        .environment(SearchResultsViewModel())
 }

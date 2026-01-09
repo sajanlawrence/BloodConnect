@@ -9,10 +9,11 @@ import SwiftUI
 
 struct ListRow: View {
     let donor: Donor
+    @State private var showCallAlert = false
     var body: some View {
         VStack{
             HStack{
-                Text(donor.name)
+                Text(donor.name.uppercased())
                     .font(.custom("Ubuntu-Bold", size: 14))
                     .foregroundStyle(.black)
                 Spacer()
@@ -22,7 +23,7 @@ struct ListRow: View {
                     .frame(width: 48, height: 48)
                 
                 Button {
-                    
+                    showCallAlert = true
                 } label: {
                     Image(.call)
                         .resizable()
@@ -34,6 +35,20 @@ struct ListRow: View {
                 .resizable()
                 .scaledToFit()
                 .frame(maxWidth: .infinity)
+        }
+        .alert("Call Donor?", isPresented: $showCallAlert) {
+            Button("Call", role: .destructive) {
+                callNumber(donor.phoneNumber)
+            }
+            Button("Cancel", role: .cancel) { }
+        }
+    }
+    
+    func callNumber(_ phoneNumber: String) {
+        let cleanedNumber = phoneNumber.replacingOccurrences(of: " ", with: "")
+        if let url = URL(string: "tel://\(cleanedNumber)"),
+           UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url)
         }
     }
 }

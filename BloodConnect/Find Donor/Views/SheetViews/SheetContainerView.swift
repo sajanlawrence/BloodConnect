@@ -18,21 +18,14 @@ enum sheetTypes: CaseIterable, Identifiable{
 struct SheetContainerView: View {
     @Environment(SheetRouter.self) private var sheetRouter
     @Environment(TabRouter.self) private var tabRouter
-    @State var requiredBloodGrp: String = ""
-    @State var location: String = ""
-    @State var state: String = ""
-    @State var address: String = ""
-    @State var hospital: String = ""
-    @State var date: String = ""
-    @State var purpose: String = ""
     var body: some View {
         switch sheetRouter.selectedSheet{
         case .bloodGropSheet:
-            BloodGrpSelectionView(requiredBloodGrp: $requiredBloodGrp)
+            BloodGrpSelectionView()
         case .addressSheet:
-            AddressView(location: $location, state: $state, address: $address, hospitalName: $hospital)
+            AddressView()
         case .requirementSheet:
-            RequirementView(date: $date, purpose: $purpose)
+            RequirementView()
         }
     }
 }

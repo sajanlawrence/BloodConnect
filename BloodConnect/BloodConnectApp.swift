@@ -12,12 +12,14 @@ struct BloodConnectApp: App {
     @State private var showHome: Bool = false
     @State private var tabRouter = TabRouter()
     @State private var sheetRouter = SheetRouter()
+    @State private var searchViewModel = SearchResultsViewModel()
     var body: some Scene {
         WindowGroup {
             if showHome{
                 TabBarContainerView()
                     .environment(tabRouter)
                     .environment(sheetRouter)
+                    .environment(searchViewModel)
             }else{
                 RootView(showHome: $showHome)
             }

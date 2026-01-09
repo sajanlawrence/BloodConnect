@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct AddressView: View {
-    @Binding var location: String
-    @Binding var state: String
-    @Binding var address: String
-    @Binding var hospitalName: String
+    @State var location: String = ""
+    @State var state: String = ""
+    @State var address: String = ""
+    @State var hospitalName: String = ""
     @Environment(SheetRouter.self) private var sheetRouter
+    @Environment(SearchResultsViewModel.self) private var searchVM
     var body: some View {
         VStack(alignment: .leading) {
             Text("LOCATION")
@@ -45,6 +46,10 @@ struct AddressView: View {
                 }
                 Spacer()
                 Button {
+                    searchVM.location = location
+                    searchVM.state = state
+                    searchVM.address = address
+                    searchVM.hospital = hospitalName
                     sheetRouter.selectedSheet = .requirementSheet
                 } label: {
                     Text("NEXT")
@@ -87,6 +92,7 @@ extension AddressView{
 }
 
 #Preview {
-    AddressView(location: .constant(""), state: .constant(""), address: .constant(""), hospitalName: .constant(""))
+    AddressView()
         .environment(SheetRouter())
+        .environment(SearchResultsViewModel())
 }
