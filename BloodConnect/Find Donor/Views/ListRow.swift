@@ -14,15 +14,12 @@ struct ListRow: View {
             HStack{
                 Text(donor.name)
                     .font(.custom("Ubuntu-Bold", size: 14))
+                    .foregroundStyle(.black)
                 Spacer()
-                Button {
-                    
-                } label: {
-                    Image(.info)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 48, height: 48)
-                }
+                Image(.info)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 48, height: 48)
                 
                 Button {
                     

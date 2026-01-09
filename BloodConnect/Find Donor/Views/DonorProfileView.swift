@@ -9,16 +9,29 @@ import SwiftUI
 
 struct DonorProfileView: View {
     let donor: Donor
+    @Environment(\.dismiss) private var dismiss
     var body: some View {
         ZStack {
             Color(red: 246/255.0, green: 246/255.0, blue: 246/255.0)
                 .ignoresSafeArea()
             VStack{
-                Text("DONOR PROFILE")
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .font(.custom("Ubuntu-Bold", size: 20))
-                    .padding(.top)
-                    .padding(.leading)
+                HStack{
+                    Button {
+                        dismiss()
+                    } label: {
+                        Image(systemName: "chevron.left")
+                            .font(.custom("Ubuntu-Bold", size: 20))
+                            .frame(width: 10, height: 30)
+                            .foregroundStyle(.black)
+                            
+                    }
+                    Text("DONOR PROFILE")
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .font(.custom("Ubuntu-Bold", size: 20))
+                }
+                .padding(.leading)
+                .padding(.top)
+                
                 Image(.userPhoto)
                     .resizable()
                     .scaledToFit()
@@ -56,7 +69,7 @@ struct DonorProfileView: View {
                     Text(donor.address)
                         .multilineTextAlignment(.center)
                 }
-                .frame(width: 297, height: 76)
+                .frame(width: 297, height: 100)
                 VStack(spacing: 30){
                     Button {
                         

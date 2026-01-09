@@ -21,7 +21,7 @@ struct TabBarContainerView: View {
                 case .donate:
                     SearchResultsView()
                 case .profile:
-                    Text("Profile View")
+                    ProfileView()
                 }
             }
             .safeAreaInset(edge: .bottom) {
