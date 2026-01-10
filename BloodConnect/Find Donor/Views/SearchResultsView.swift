@@ -24,7 +24,7 @@ struct SearchResultsView: View {
                         Text("\(searchVM.matchingDonors().count) RESULT(S) FOUND FOR BLOOD TYPE")
                             .font(.custom("Ubuntu-Regular", size: 14))
                             .foregroundStyle(Color(red: 153/255.0, green: 153/255.0, blue: 153/255.0))
-                        Text("B+")
+                        Text(searchVM.requiredBloodGrp)
                             .foregroundStyle(.appPrimary)
                             .font(.custom("Ubuntu-Bold", size: 14))
                     }
@@ -39,8 +39,6 @@ struct SearchResultsView: View {
                             } label: {
                                 ListRow(donor: donor)
                             }
-                            
-                            
                         }
                     }
                     .scrollIndicators(.hidden)

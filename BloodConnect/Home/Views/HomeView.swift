@@ -10,6 +10,7 @@ import SwiftUI
 struct HomeView: View {
     let images: [ImageResource] = [.sliderImage1, .sliderImage2]
     @Binding var showDonationSheet: Bool
+    @Binding var showTabBar: Bool
     var body: some View {
         NavigationStack {
             VStack(alignment: .center){
@@ -54,8 +55,15 @@ struct HomeView: View {
                                 ActionCardView(imageName: .campaign, title: "CAMPAIGNS")
                             }
                             
-                            Button {
-                                
+                            NavigationLink {
+                                DonateBloodFormView()
+                                    .onAppear {
+                                        showTabBar = false
+                                    }
+                                    .onDisappear {
+                                        showTabBar = true
+                                    }
+                                    //.navigationBarBackButtonHidden(true)
                             } label: {
                                 ActionCardView(imageName: .bloodBag, title: "DONATE")
                             }
@@ -78,5 +86,5 @@ struct HomeView: View {
 }
 
 #Preview {
-    HomeView(showDonationSheet: .constant(false))
+    HomeView(showDonationSheet: .constant(false), showTabBar: .constant(false))
 }
