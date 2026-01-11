@@ -18,7 +18,7 @@ struct HomeView: View {
                     VStack(alignment: .leading){
                         Text("WELCOME")
                             .font(.custom("Ubuntu-Regular", size: 14))
-                        Text("SAJAN LAWRENCE")
+                        Text("FELIX GORDON")
                             .font(.custom("Ubuntu-Bold", size: 18))
                     }
                     Spacer()
@@ -63,7 +63,6 @@ struct HomeView: View {
                                     .onDisappear {
                                         showTabBar = true
                                     }
-                                    //.navigationBarBackButtonHidden(true)
                             } label: {
                                 ActionCardView(imageName: .bloodBag, title: "DONATE")
                             }
